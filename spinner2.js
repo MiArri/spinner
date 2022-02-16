@@ -6,6 +6,9 @@ const spinner = function(arr) {
       process.stdout.write(arr[i]);
     }, duration);
   }
+  setTimeout(() => {
+    process.stdout.write("\n");
+  }, duration);
 };
 
 spinner(['\r|   ','\r/   ','\r-   ','\r\\   ','\r|   ','\r/   ','\r-   ','\r\\   ','\r|   ']);
